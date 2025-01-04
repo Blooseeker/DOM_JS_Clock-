@@ -55,3 +55,70 @@
 
 // 36.4 DOM JavaScript Digital Clock - Hiển thị thời gian thực với DOM - học DOM JavaScript qua Ví dụ
 // https://www.youtube.com/watch?v=K_NOvHhpoPI
+
+// 36.5 JavaScript DOM Hiểu rõ getAttribute và setAttribute Understanding getAttribute vs setAttribute
+// https://www.youtube.com/watch?v=yRVy-gKPSZo&t=2s
+// 8.querySelector
+// sử dụng querySelector để chọn thẻ a đầu tiên
+// const firstLink = document.querySelector("a");
+// // xem thuộc tính sử dụng getAttribute
+// // kiểm tra xem có thẻ a nào được tìm thấy hay không
+// if (firstLink) {
+//   const linkHref = firstLink.getAttribute("href");
+//   console.log(linkHref); //https://tuhoc.cc
+// } else {
+//   console.log("Không tìm thấy thẻ a");
+// }
+
+// // 9.setAttribute
+// firstLink.setAttribute("target", "_blank");
+
+// // sử dụng querySelectorAll
+// const links = document.querySelectorAll("ul a");
+// console.log(links);
+
+// // lặp qua mỗi thẻ a và sử dụng setAttribute
+// // để nhận thêm thuôc tính target= "_blank"
+// links.forEach((singleLink) => {
+//   singleLink.setAttribute("target", "_blank");
+// });
+
+// thay đổi màu cảu thẻ h1 Cách 1
+// const color = document.querySelector("h1");
+// console.log(color);
+// color.setAttribute("style", " color: blue;");
+// cách 2
+// const color = document.getElementById("heading_title");
+// console.log(color);
+// color.setAttribute("style", " color: blue;");
+// viết ngắn gọn
+// document.querySelector("#heading_title").setAttribute("style", " color: blue;");
+
+// 36.6 JavaScript DOM | Using removeAttribute and hasAttribute
+// https://www.youtube.com/watch?v=NasXsNxsrnY
+
+//  sử dụng querySelector để chọn phần tử đầu tiên có class là "list"
+// const item1 = document.querySelector(".list");
+
+// // 10. hasAttribute
+// // Kiểm tra xem phần tử có thuộc tính class không?
+// console.log(item1.hasAttribute("class")); // true
+// // kiểm tra xem trong thẻ h1 có ID là heading_title có thuộc tính style ko và nó có
+// console.log(document.querySelector("#heading_title").hasAttribute("style")); // true
+
+// // 11. removeAttrybute
+// // loại bỏ 1 thuộc tính khỏi phần tử
+
+// document.querySelector("#heading_title").removeAttribute("style");
+// // kiểm tra lại xem "style" còn tồn tại trong thẻ h2 ko
+// console.log(document.querySelector("#heading_title").hasAttribute("style")); // fasle
+
+// 36.7 JS DOM Hiểu rõ về textContent, innerText, và innerHTML trong JavaScript
+// https://www.youtube.com/watch?v=AmMEFcNm9CM
+
+let element1 = document.getElementById("demo");
+console.log(element1);
+element1.innerHTML = "<p><i>Hài vãi nồi</i></p>";
+console.log(element1.innerHTML);
+console.log(element1.innerText);
+console.log(element1.textContent);
