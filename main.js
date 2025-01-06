@@ -116,9 +116,22 @@
 // 36.7 JS DOM Hiểu rõ về textContent, innerText, và innerHTML trong JavaScript
 // https://www.youtube.com/watch?v=AmMEFcNm9CM
 
-let element1 = document.getElementById("demo");
-console.log(element1);
-element1.innerHTML = "<p><i>Hài vãi nồi</i></p>";
-console.log(element1.innerHTML);
-console.log(element1.innerText);
-console.log(element1.textContent);
+// let element1 = document.getElementById("demo");
+// console.log(element1);
+// element1.innerHTML = "<p><i>Hài vãi nồi</i></p>";
+// console.log(element1.innerHTML);
+// console.log(element1.innerText);
+// console.log(element1.textContent);
+
+// 36.8 JS DOM | dom style javascript |Tùy chỉnh CSS thông qua JavaScript DOM
+// https://www.youtube.com/watch?v=lvCL00yVBkU
+
+// 36.9 JS DOM_ dom style part 2
+// https://www.youtube.com/watch?v=44TFC72x1vk
+
+// 36.11 JS DOMTutorial Truy cập Parent, Child, and Siblings - Truy Cập Phần Tử Cha, Con và Anh Em JS
+// https://youtube.com/watch?v=IhNCd-eFF1M
+
+// 36.12 JS DOMTutorial Tạo và Thêm Phần Tử Mới Vào DOM Với Append và Prepend
+// https://www.youtube.com/watch?v=ERj4bXpN4o0
+
